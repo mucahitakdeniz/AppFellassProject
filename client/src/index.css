@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.not-found {
+  text-align: center;
+  padding: 50px;
+}
+
+.not-found h1 {
+  font-size: 3em;
+  color: #333;
+}
+
+.not-found p {
+  margin: 20px 0;
+  color: #666;
+}
+
+.not-found a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.not-found a:hover {
+  text-decoration: underline;
+}
