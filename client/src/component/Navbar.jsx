@@ -8,16 +8,19 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar-left">
         <LocalAirportIcon className="icons" id="LocalAirportIcon" />{" "}
-        <h3>Plane Scape</h3>
+        <p>Plane Scape</p>
       </div>
       <div className="navbar-right">
-        <LocalOfferRoundedIcon className="icons" /> <h3>Deals</h3>
-        <PublicOutlinedIcon className="icons" /> <h3>Discover</h3>
-        <img
-          src="https://avatars.mds.yandex.net/i?id=d26250d529c1daa9331a1407deaf0ea0b348cfa8-4797777-images-thumbs&n=13"
-          alt=""
-        />
-        <h3>Joane Smith</h3>
+        <LocalOfferRoundedIcon className="icons" /> <p>Deals</p>
+        <PublicOutlinedIcon className="icons" /> <p>Discover</p>
+        <div className="avatar-container">
+          <img
+            className="avatar"
+            src="https://avatars.mds.yandex.net/i?id=d26250d529c1daa9331a1407deaf0ea0b348cfa8-4797777-images-thumbs&n=13"
+            alt="My Foto"
+          />
+        </div>
+        <p>Joane Smith</p>
       </div>
     </div>
   );

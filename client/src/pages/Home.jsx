@@ -1,13 +1,19 @@
-import React from 'react';
-import Navbar from '../component/Navbar';
+import React from "react";
+import Navbar from "../component/Navbar";
+import FlightsDetail from "../component/FlightsDetail";
+import Advertisement from "../component/Advertisement";
 
 const Home = () => {
-  return (<div className='home'>
-    <Navbar/>
-    <div>
-      <h1>Home Page</h1>
-      <p>Welcome to the home page!</p>
-    </div>
+  return (
+    <div className="home">
+      <div className="plane-scape">
+        <Navbar />
+        <div className="home-content">
+
+          <FlightsDetail/>
+          <Advertisement/>
+        </div>
+      </div>
     </div>
   );
 };

@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* NotFaund */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -35,6 +36,8 @@ code {
   text-decoration: underline;
 }
 
+/*Navbar*/
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -45,11 +48,22 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
-.navbar img {
-  width: 3rem;
-  border-radius: 100%;
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 2rem;
 }
 
 .icons {
@@ -57,9 +71,51 @@ code {
   color: aliceblue;
 }
 #LocalAirportIcon {
-  transform: rotate(90deg); 
+  transform: rotate(90deg);
   border-radius: 50%;
 }
-.navbar-right .icons{  background-color:aliceblue ;  color:#5513a1 ;
+.navbar-right .icons {
+  background-color: aliceblue;
+  color: #5513a1;
+}
 
+/* Home*/
+.home {
+  height: 100vh;
+  height: 100vh;
+  background-color: #f3e8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.plane-scape {
+  position: relative;
+  width: 120vh;
+  background: white;
+  height: 78vh;
+  padding: 1vh;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 1px 5px rgba(253, 252, 253, 0.7),
+    2px -2px 4px rgba(247, 244, 246, 0.3),
+    -2px -2px 4px rgba(226, 220, 224, 0.3), 0 8px 12px rgba(128, 0, 128, 0.7);
+}
+.home-content {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+}
+
+.flights-detail {
+  width: 80%;
+  height: 100%;
+}
+
+
+.advertisement {
+  width: 20%;
+  height: 100%;
+  background: #007bff;
 }
