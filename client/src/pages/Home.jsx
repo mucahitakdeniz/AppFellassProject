@@ -9,10 +9,10 @@ const Home = () => {
       <div className="plane-scape">
         <Navbar />
         <div className="home-content">
-
-          <FlightsDetail/>
-          <Advertisement/>
+          <FlightsDetail />
+          <Advertisement />
         </div>
+
       </div>
     </div>
   );
