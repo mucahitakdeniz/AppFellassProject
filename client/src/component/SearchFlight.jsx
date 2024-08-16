@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import LocalAirportIcon from "@mui/icons-material/LocalAirport";
-import { Box, Button, Input } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import Inputs from "./Inputs";
 
 const SearchFlight = () => {

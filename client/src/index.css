@@ -70,6 +70,10 @@ code {
   background-color: #5513a1;
   color: aliceblue;
 }
+.search-icons {
+  color: #5513a1;
+  padding: 8px;
+}
 #LocalAirportIcon {
   transform: rotate(90deg);
   border-radius: 50%;
@@ -112,7 +116,6 @@ code {
   width: 80%;
   height: 100%;
 }
-
 
 .advertisement {
   width: 20%;
