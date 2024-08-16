@@ -1,7 +1,6 @@
 import { Box } from "@mui/material";
 import React from "react";
 import FlightsList from "./FlightsList";
-import FlightsFilters from "./FlightsFilters";
 
 const Flights = () => {
   return (
@@ -15,7 +14,6 @@ const Flights = () => {
         height: "20rem",
         display: "flex",
         flexDirection: "row",
-        width: "80%",
       }}
     >
       <Box sx={{}}>
