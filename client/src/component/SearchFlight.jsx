@@ -1,13 +1,10 @@
-import React, { useState } from "react";
+import React  from "react";
 import LocalAirportIcon from "@mui/icons-material/LocalAirport";
 import { Box, Button } from "@mui/material";
-import Inputs from "./Inputs";
 
-const SearchFlight = () => {
-  const [roundTrip, setRoundTrip] = useState(true);
+const SearchFlight = ({roundTrip,setRoundTrip}) => {
 
   return (
-    <div>
       <Box
         sx={{
           display: "flex",
@@ -60,8 +57,6 @@ const SearchFlight = () => {
           </Button>
         </Box>
       </Box>
-        <Inputs roundTrip={roundTrip} />
-    </div>
   );
 };
 

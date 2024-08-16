@@ -97,7 +97,7 @@ code {
 .plane-scape {
   position: relative;
   width: 120vh;
-  background: white;
+  background: rgb(253, 247, 247);
   height: 78vh;
   padding: 1vh;
   border-radius: 20px;
@@ -112,13 +112,9 @@ code {
   padding: 2rem;
 }
 
-.flights-detail {
-  width: 80%;
-  height: 100%;
-}
+
 
 .advertisement {
   width: 20%;
   height: 100%;
-  background: #007bff;
 }

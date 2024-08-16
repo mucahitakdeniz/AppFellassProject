@@ -1,11 +1,16 @@
-import React from "react";
+import React,{ useState } from "react";
 import SearchFlight from "./SearchFlight";
+import { Box } from "@mui/material";
+import Inputs from "./Inputs";
 
 const FlightsDetail = () => {
+  const [roundTrip, setRoundTrip] = useState(true);
+
   return (
-    <div className="flights-detail">
-      <SearchFlight />
-    </div>
+    <Box sx={{bgcolor:"white",p:1,borderRadius:3,width: "80%",}}>
+      <SearchFlight roundTrip={roundTrip} setRoundTrip={setRoundTrip} />
+      <Inputs roundTrip={roundTrip} />
+    </Box>
   );
 };
 
