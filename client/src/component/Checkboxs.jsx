@@ -7,14 +7,15 @@ import { styled } from "@mui/system";
 
 const SmallCheckbox = styled(Checkbox)({
   "& .MuiSvgIcon-root": {
-    fontSize: 13, 
+    fontSize: 13,
   },
 });
 
 const SmallFormControlLabel = styled(FormControlLabel)({
   "& .MuiTypography-root": {
-    fontSize: "0.6rem", 
+    fontSize: "0.6rem",
   },
+ height:"1.1rem"
 });
 
 const Checkboxes = ({ data, setData }) => {
