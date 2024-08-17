@@ -14,9 +14,10 @@ const FlightsDetail = () => {
         sx={{
           p: 1,
           borderRadius: 3,
-          width: "95%",
+          width: "48rem",
           height: "11rem",
-          bgcolor:"white"
+          bgcolor:"white",
+          marginRight:1
         }}
       >
         <SearchFlight roundTrip={roundTrip} setRoundTrip={setRoundTrip} />
@@ -33,7 +34,6 @@ const FlightsDetail = () => {
         }}
       >
         <Box sx={{ width: "78%" }}>
-          {" "}
           <Flights />
         </Box>
         <Box sx={{ bgcolor: "rgb(248, 245, 245)", width: "22%",marginTop:"2.2rem" }}>

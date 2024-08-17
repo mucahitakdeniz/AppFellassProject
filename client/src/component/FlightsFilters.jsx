@@ -1,18 +1,27 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
-import Select from "@mui/joy/Select";
-import Option from "@mui/joy/Option";
+import React, { useState } from "react";
+import UnstyledSelectIntroduction from "./UnstyledSelectIntroduction";
+import Checkboxes from "./Checkboxs";
 
 const FlightsFilters = () => {
+  const [timeState, setTimeState] = useState({
+    "05.00 AM -11.59 AM": false,
+    "12.00 PM-5.59 PM": false,
+  });
   return (
-    <Box sx={{ display: "flex", flexDirection: "column" }}>
-      <Typography variant="p" fontSize="1rem">
+    <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+      <Typography fontSize="0.8rem" variant="body2">
         Sort by :
       </Typography>
-      {/* <Select defaultValue="dog">
-        <Option value="dog">Dog</Option>
-        <Option value="cat">Cat</Option>
-      </Select> */}
+      <UnstyledSelectIntroduction />
+      <Typography fontSize="0.8rem" variant="body2" marginTop={2}>
+        Arrival Time
+      </Typography>
+      <Checkboxes data={timeState} setData={setTimeState} />
+      <Typography fontSize="0.8rem" variant="body2" marginTop={2}>
+        Stops
+      </Typography>
+      <Checkboxes data={timeState} setData={setTimeState} />
     </Box>
   );
 };
